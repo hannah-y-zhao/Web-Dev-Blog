@@ -1,9 +1,43 @@
-body {
-    background-color: powderblue;
+
+.header {
+    background-color: #051616;
+    height: 450px;
+
+    width: 100%;
+
+}
+#title {
+    
+    font-size: 250%;
+    color:#d8ddea;
+    text-align: center;
+    padding: 2%; 
+
+    position: relative;
+    align-items:center;
+    justify-content: center;
+    width: 600px;
+    height: 70px;
+    display:flex;
+
+}
+
+.corner{
+    position:absolute;
+    width:30px; height: 30px;
+    border-color:#d8ddea; 
+    border-style:solid; 
+    content: ' ';
+}
+
+#title > #topleft {top:0;left:0;border-width: 3px 0 0 3px}
+#title > #topright {top:0;right:0;border-width: 3px 3px 0 0}
+#title > #bottomright {bottom:0;right:0;border-width: 0 3px 3px 0}
+#title > #bottomleft {bottom:0;left:0;border-width: 0 0 3px 3px}
+  
+.subheadings{
+    color: #d8ddea;
   }
-  h1 {
-    color: blue;
-  }
-  p {
-    color: red;
-  }
+.posts{
+    background-color: #78949f;
+}
