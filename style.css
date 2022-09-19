@@ -67,6 +67,7 @@ body {
 .posts {
     padding-top: 10%;
     padding-bottom: 10%;
-
+    display: flex;
+    justify-content: space-evenly;
 
 }

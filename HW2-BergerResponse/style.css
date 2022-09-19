@@ -1,8 +1,15 @@
 body {
-    margin: 5%;
+    padding: 25px;
+    margin: 0;
+    box-sizing: border-box;
+    /* guide from:  https://css-tricks.com/snippets/css/complete-guide-grid/ */
     display: grid;
+    width: 100%;
+    height: 800px;
     grid-template-columns: [col1] 55% [col2] 45% [col3];
-    grid-template-rows: [row1] 650% [row2] 600% [row3] 450% [row4] 600% [row5];
+    /* grid-template-rows: [row1] 650% [row2] 600% [row3] 450% [row4] 600% [row5]; */
+    grid-template-rows: [row1] 65% [row2] 60% [row3] 45% [row4] 60% [row5];
+
 }
 
 .cameraIntro {
