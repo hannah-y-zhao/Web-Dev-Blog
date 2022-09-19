@@ -1,0 +1,46 @@
+body {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: [col1] 55% [col2] 45% [col3];
+    grid-template-rows: [row1] 650% [row2] 600% [row3] 450% [row4] 600% [row5];
+}
+
+.cameraIntro {
+    background-color: red;
+    grid-column-start: col1;
+    grid-column-end: col3;
+    grid-row-start: row1;
+    grid-row-end: row2;
+}
+
+.vanity {
+    background-color: aquamarine;
+    grid-column-start: col1;
+    grid-column-end: col2;
+    grid-row-start: row2;
+    grid-row-end: row3;
+}
+
+.painting {
+    background-color: orange;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row-start: row2;
+    grid-row-end: row4;
+}
+
+.publicity {
+    background-color: purple;
+    grid-column-start: col1;
+    grid-column-end: col2;
+    grid-row-start: row3;
+    grid-row-end: row4;
+}
+
+.cameraOutro {
+    background-color: brown;
+    grid-column-start: col1;
+    grid-column-end: col3;
+    grid-row-start: row4;
+    grid-row-end: row5;
+}
