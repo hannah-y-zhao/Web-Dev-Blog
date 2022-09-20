@@ -1,6 +1,7 @@
 body {
-    padding: 25px;
+    padding: 5%;
     margin: 0;
+    background-color: rgb(232, 232, 232);
     box-sizing: border-box;
     /* guide from:  https://css-tricks.com/snippets/css/complete-guide-grid/ */
     display: grid;
@@ -8,28 +9,90 @@ body {
     height: 800px;
     grid-template-columns: [col1] 55% [col2] 45% [col3];
     /* grid-template-rows: [row1] 650% [row2] 600% [row3] 450% [row4] 600% [row5]; */
-    grid-template-rows: [row1] 65% [row2] 60% [row3] 45% [row4] 60% [row5];
+    grid-template-rows: [row1] 75% [row2] 60% [row3] 45% [row4] 60% [row5];
+
 
 }
 
 .cameraIntro {
-    background-color: red;
+    /* background-color: red; */
+    padding:1%;
     grid-column-start: col1;
     grid-column-end: col3;
     grid-row-start: row1;
     grid-row-end: row2;
+    border-style: solid;
+    border-width: 0px 0px 3px
+}
+.camera {
+    float:right;
+    margin-right:5%;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row-start: row1;
+    grid-row-end: row2;
+}
+.rotateBuy {
+    text-align: center;
+    line-height:0%;
+    transform-origin: 0 ;
+    transform: rotate(-3deg);
+    font-family: Helvetica, sans-serif;
+    font-size: 170%;
+    font-weight: bold;
+    padding-bottom: 3%;
+
+}
+.rotateBuy2 {
+    text-align: center;
+    line-height:0%;
+    transform-origin: 0 ;
+    transform: rotate(-5deg);
+    font-family: Helvetica, sans-serif;
+    font-size: 250%;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    border-style:dashed;
+    border-width: 2px
+}
+.Buy {
+    text-align: center;
+    line-height:150%;
+    /* transform-origin: 0 ; */
+    /* transform: rotate(-3deg); */
+    font-family: Helvetica, sans-serif;
+    font-size: 170%;
+    font-weight: bold;
+    padding-bottom: 3%;
+
 }
 
 .vanity {
-    background-color: aquamarine;
+    margin-top: 1%;
+    /* background-color: aquamarine; */
     grid-column-start: col1;
     grid-column-end: col2;
     grid-row-start: row2;
     grid-row-end: row3;
+    border-style: solid;
+    border-width: 2px;
+
+    display: table-cell;
+
+}
+.mirror {
+    float: right;
+    /* position:static; */
+    text-align: right;
+    /* display: table-cell; */
+    padding-left: 2%;
+    
 }
 
 .painting {
-    background-color: orange;
+    /* background-color: orange; */
     grid-column-start: col2;
     grid-column-end: col3;
     grid-row-start: row2;
@@ -37,17 +100,87 @@ body {
 }
 
 .publicity {
-    background-color: purple;
+    margin-top: 2%;
+    margin-bottom: 1%;
+
+    /* background-color: purple; */
     grid-column-start: col1;
     grid-column-end: col2;
     grid-row-start: row3;
     grid-row-end: row4;
+    border-style: solid;
+    border-width: 2px
 }
 
 .cameraOutro {
-    background-color: brown;
+    /* background-color: brown; */
+    /* margin-bottom: 30px; */
+
     grid-column-start: col1;
     grid-column-end: col3;
     grid-row-start: row4;
     grid-row-end: row5;
+    border-style: solid;
+    border-width: 3px 0px 0px
+
+}
+
+.headTxt {
+    font-size: 200%;
+    font-family: "Optima";
+    text-align: justify;
+    letter-spacing: 3px;
+    display:inline-block;
+}
+.headTxt2 {
+    font-size: 125%;
+    font-family: "Optima";
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+.headTxt3 {
+    margin-top:3%;
+    font-size: 125%;
+    font-family: "Optima";
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+.mainTxt {
+    font-size: 115%;
+    font-family: "Optima";
+    text-align: justify;
+    padding-left: 3%;
+}
+.mainTxt2 {
+    font-size: 115%;
+    font-family: "Optima";
+    text-align: left;
+    display: inline-block;
+    padding-left: 3%;
+
+}
+
+.product1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Helvetica;
+    text-align:justify;
+    font-weight: bolder;
+    font-size: 750%;
+    letter-spacing: -5px;
+    line-height: 90%;
+}
+.product2 {
+    font-size: 500%;
+    font-family: 'Rozha One', serif;
+    text-align:center;
+    
+}
+
+.em1 {
+    font-size: 150%;
+    text-align:center;
+    font-weight:bold;
+    margin-top: 2%;
 }
