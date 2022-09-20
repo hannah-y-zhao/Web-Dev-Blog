@@ -9,7 +9,7 @@ body {
     height: 800px;
     grid-template-columns: [col1] 55% [col2] 45% [col3];
     /* grid-template-rows: [row1] 650% [row2] 600% [row3] 450% [row4] 600% [row5]; */
-    grid-template-rows: [row1] 75% [row2] 60% [row3] 45% [row4] 60% [row5];
+    grid-template-rows: [row1] 75% [row2] 60% [row3] 45% [row4] 90% [row5];
 
 
 }
@@ -60,18 +60,28 @@ body {
 .Buy {
     text-align: center;
     line-height:150%;
-    /* transform-origin: 0 ; */
-    /* transform: rotate(-3deg); */
+ 
     font-family: Helvetica, sans-serif;
-    font-size: 170%;
+    font-size: 270%;
     font-weight: bold;
-    padding-bottom: 3%;
+    padding-top: 5%;
 
+}
+.Buy2 {
+    text-align: center;
+    line-height:150%;
+    background-color:rgb(75, 75, 75);
+    font-family: Helvetica, sans-serif;
+    font-size: 270%;
+    font-weight: bold;
+    margin-top: 5%;
+    
+    color: rgb(232, 232, 232)
 }
 
 .vanity {
     margin-top: 1%;
-    /* background-color: aquamarine; */
+    position: relative;
     grid-column-start: col1;
     grid-column-end: col2;
     grid-row-start: row2;
@@ -79,15 +89,13 @@ body {
     border-style: solid;
     border-width: 2px;
 
-    display: table-cell;
 
 }
 .mirror {
-    float: right;
-    /* position:static; */
-    text-align: right;
-    /* display: table-cell; */
-    padding-left: 2%;
+    bottom: 3%;
+    display: inline-block;
+    right: 10%;
+    position: absolute;
     
 }
 
@@ -102,6 +110,7 @@ body {
 .publicity {
     margin-top: 2%;
     margin-bottom: 1%;
+    position: relative;
 
     /* background-color: purple; */
     grid-column-start: col1;
@@ -111,11 +120,24 @@ body {
     border-style: solid;
     border-width: 2px
 }
+.manpic {
+    bottom: 0;
+    display: inline-block;
+    left: 1%;
+    position: absolute;
+}
+
+.berger {
+    top: 3%;
+    display: inline-block;
+    left: 5%;
+    position: absolute;
+}
+
 
 .cameraOutro {
     /* background-color: brown; */
-    /* margin-bottom: 30px; */
-
+    position:relative;
     grid-column-start: col1;
     grid-column-end: col3;
     grid-row-start: row4;
@@ -123,6 +145,20 @@ body {
     border-style: solid;
     border-width: 3px 0px 0px
 
+}
+.outroIntro {
+    font-family: "Optima";
+    font-size: 155%;
+    padding-top: 3%;
+    padding-left: 40%;
+    line-height: 105%
+}
+.outroIntro2 {
+    font-family: "Optima";
+    font-size: 125%;
+    padding-top: 0%;
+    line-height: 55%;
+    text-align: center
 }
 
 .headTxt {
@@ -147,6 +183,15 @@ body {
     letter-spacing: 2px;
     
 }
+.headTxt4 {
+    margin-top:3%;
+    font-size: 90%;
+    font-family: "Optima";
+    text-align: center;
+    letter-spacing: 2px;
+    padding-left:55%
+    
+}
 .mainTxt {
     font-size: 115%;
     font-family: "Optima";
@@ -158,8 +203,16 @@ body {
     font-family: "Optima";
     text-align: left;
     display: inline-block;
-    padding-left: 3%;
+    padding-left: 5%;
 
+}
+.mainTxt3 {
+    font-size: 145%;
+    font-family: "Optima";
+    text-align: left;
+    display: absolute;
+    padding-left: 55%;
+    line-height:150%
 }
 
 .product1 {
@@ -176,6 +229,20 @@ body {
     font-family: 'Rozha One', serif;
     text-align:center;
     
+}
+.product3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 300%;
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+.product4 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Helvetica;
+    font-size: 550%;
+    line-height: 130%;
+    text-align:center;
 }
 
 .em1 {
