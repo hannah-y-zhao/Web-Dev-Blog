@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    flex-wrap:wrap;
+}
+.col1 {
+    flex-direction:column;
+    flex-basis: 45rem;
+    
+}
+.col2 {
+    flex-direction:column;
+    flex-basis: 45rem;
+
+}
+.deathLetter {
+    background-color: aqua;
+    padding-top:5rem;
+    padding-bottom:15rem;
+    padding-left:5rem;
+    padding-right:5rem;
+
+}
+.morse {
+    background-color: rgb(25, 153, 110);
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+}
+.receipt {
+    background-color: blue;
+    padding-top: 25rem;
+    padding-bottom: 5rem;
+}
+.end {
+    background-color: blueviolet;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+
+.center {
+    text-align: center;
+}
+.courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+.strikethrough { 
+    text-decoration: line-through;
+    color: #AFAFAF;
+}
