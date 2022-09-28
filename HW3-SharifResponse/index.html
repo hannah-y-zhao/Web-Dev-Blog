@@ -6,12 +6,25 @@
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js">
+        </script> -->
+
+<script src="locomotive-scroll.min.js"></script>
+<script>
+    (function () {
+        var scroll = new LocomotiveScroll();
+    })();
+</script>
+    <script src = "scroll.js"></script>
 </head>
+
 <body>
-    <div class = "col1">
-        <div class = "deathLetter">
+    <div data-scroll-container>
+    <div class = "col1" data-scroll-section>
+        <div class = "deathLetter" data-scroll data-scroll-speed="1">
             <div class = "courier">
                 <div id = "introBody">
                     <div class = "center">
@@ -63,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class = "morse">
+        <div class = "morse" data-scroll data-scroll-speed="4">
             <div class = "courier">
                 <div class = "justify">
                     <i>
@@ -75,8 +88,10 @@
             </div>
         </div>
     </div>
-    <div class = "col2">
-        <div class = "receipt">
+    </div>  
+    <div data-scroll-container>
+    <div class = "col2" data-scroll-section>
+        <div class = "receipt" data-scroll data-scroll-speed="1">
             <div class = "roboto">
                 <div id = "receiptHead">
                     <div class = "center">
@@ -187,6 +202,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 </html>

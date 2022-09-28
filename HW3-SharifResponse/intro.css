@@ -16,14 +16,20 @@ body {
 
     border-style: solid;
     border-color: white;
-    border-width: 3px
+    border-width: 3px;
+
+    transition: background-color 500ms ease-out 100ms
 }
 .hoverButton:hover span {
     /* https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text */
     display:none;
 }
+.hoverButton:hover {
+    /* https://blog.hubspot.com/website/css-hover-animation#:~:text=What%20is%20a%20CSS%20hover,to%20enhance%20your%20site's%20interactivity. */
+    background-color:#5d5d5d;
+}
 .hoverButton:hover::before {
-    content: "BEGIN →"
+    content: "BEGIN →";
 }
 .txt {
     margin-top:15%;
