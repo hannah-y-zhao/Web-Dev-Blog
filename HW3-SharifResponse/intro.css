@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: #343434;
+}
+.hoverButton {
+    color: white;
+    text-align: center;
+    font-size:3em;
+    font-family:'Montserrat',sans-serif;
+    text-decoration: underline;
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left:35%;
+    margin-right:35%;
+
+    border-style: solid;
+    border-color: white;
+    border-width: 3px
+}
+.hoverButton:hover span {
+    /* https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text */
+    display:none;
+}
+.hoverButton:hover::before {
+    content: "BEGIN →"
+}
+.txt {
+    margin-top:15%;
+    margin-bottom:5%;
+    margin-left:15%;
+    margin-right:15%;
+
+    font-family:'Montserrat',sans-serif;
+    text-align: center;
+    color: white;
+    font-size:2em;
+    line-height: 2em
+}
