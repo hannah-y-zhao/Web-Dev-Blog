@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: [col1] 0.125fr [col2] 0.125fr [col3] 0.125fr [col4] 0.125fr [col5] 0.125fr [col6] 0.125fr [col7] 0.125fr [col8] 0.125fr [col9];
+    grid-template-rows: repeat(114, 5rem);
+}
+#title {
+    background-color: aqua;
+
+    grid-column: col3 / col8;
+    grid-row: 1 / 5;
+}
+#names {
+    background-color: rgb(187, 130, 240);
+
+    grid-column: col3 / col8;
+    grid-row: 5 / 6;
+}
+
+
+
+/* --- QUOTES --- */
+#col5-7-row6-9 {
+    background-color: rgb(168, 109, 109);
+
+    grid-column: col5 / col7;
+    grid-row: 6 / 9;
+}
+#col3-6-row11-16 {
+    background-color: rgb(109, 163, 168);
+
+    grid-column: col3 / col6;
+    grid-row: 11 / 16;
+
+}
+#col4-9-row20-23 {
+    background-color: rgb(190, 72, 184);
+
+    grid-column: col4 / col9;
+    grid-row: 20 / 23;
+
+}
+#col6-9-row23-25 {
+    background-color: rgb(234, 147, 229);
+
+    grid-column: col6 / col9;
+    grid-row: 23 / 25;
+
+}
+#col1-4-row28-31 {
+    background-color: rgb(166, 234, 147);
+
+    grid-column: col1 / col4;
+    grid-row: 28 / 31;
+
+}
+#col4-6-row31-39 {
+    background-color: rgb(218, 213, 126);
+
+    grid-column: col4 / col6;
+    grid-row: 31 / 39;
+
+}
+#col3-7-row43-46 {
+    background-color: rgb(77, 252, 255);
+
+    grid-column: col3 / col7;
+    grid-row: 43 / 46;
+}
+#col2-4-row48-53 {
+    background-color: rgb(190, 77, 255);
+
+    grid-column: col2 / col4;
+    grid-row: 48 / 53;
+}
+#col2-4-row53-55 {
+    background-color: rgb(194, 130, 144);
+
+    grid-column: col2 / col4;
+    grid-row: 53 / 55;
+}
+#col5-8-row50-52 {
+    background-color: rgb(217, 193, 255);
+
+    grid-column: col5 / col8;
+    grid-row: 50 / 52;
+}
+#col6-9-row52-54 {
+    background-color: rgb(193, 234, 255);
+
+    grid-column: col6 / col9;
+    grid-row: 52 / 54;
+}
+#col2-5-row60-62 {
+    background-color: rgb(193, 255, 223);
+
+    grid-column: col2 / col5;
+    grid-row: 60 / 62;
+}
+#col5-7-row62-64 {
+    background-color: rgb(73, 172, 121);
+
+    grid-column: col5 / col7;
+    grid-row: 62 / 64;
+}
+#col3-5-row71-73 {
+    background-color: rgb(129, 194, 160);
+
+    grid-column: col3 / col5;
+    grid-row: 71 / 73;
+}
+#col5-7-row73-75 {
+    background-color: rgb(129, 194, 133);
+
+    grid-column: col5 / col7;
+    grid-row: 73 / 75;
+}
+#col5-7-row79-81 {
+    background-color: rgb(153, 194, 129);
+
+    grid-column: col5 / col7;
+    grid-row: 79 / 81;
+}
+#col3-5-row81-83 {
+    background-color: rgb(188, 194, 129);
+
+    grid-column: col3 / col5;
+    grid-row: 81 / 83;
+}
+#col5-7-row87-89 {
+    background-color: rgb(194, 177, 129);
+
+    grid-column: col5 / col7;
+    grid-row: 87 / 89;
+}
+#col1-4-row95-97 {
+    background-color: rgb(212, 129, 220);
+
+    grid-column: col1 / col4;
+    grid-row: 95 / 97;
+}
+#col4-8-row98-100 {
+    background-color: rgb(87, 20, 93);
+
+    grid-column: col4 / col8;
+    grid-row: 98 / 100;
+}
+#col2-5-row104-108 {
+    background-color: rgb(88, 161, 188);
+
+    grid-column: col2 / col5;
+    grid-row: 104 / 108;
+}
+#col4-9-row113-115 {
+    background-color: rgb(10, 178, 239);
+
+    grid-column: col4 / col9;
+    grid-row: 113 / 115;
+}
+
+
+
+
+/* --- COLUMNS --- */
+/* #col1-2-row1-end {
+    background-color: rgb(110, 110, 255);
+
+    grid-column: col1 / col2;
+    grid-row: 1 / 115;
+
+}
+#col2-3-row1-end {
+    background-color: brown;
+
+    grid-column: col2 / col3;
+    grid-row: 1 / 115;
+
+}
+#col8-9-row1-end {
+    background-color: rgb(141, 209, 209);
+
+    grid-column: col8 / col9;
+    grid-row: 1 / 115;
+
+}
+#col3-4-row6-end {
+    background-color: bisque;
+
+    grid-column: col3 / col4;
+    grid-row: 1 / 115;
+
+}
+#col4-5-row6-end {
+    background-color: rgb(255, 165, 126);
+
+    grid-column: col4 / col5;
+    grid-row: 1 / 115;
+}
+#col5-6-row6-end {
+    background-color: rgb(255, 119, 126);
+
+    grid-column: col5 / col6;
+    grid-row: 1 / 115;
+
+}
+#col6-7-row6-end {
+    background-color: rgb(255, 140, 131);
+
+    grid-column: col6 / col7;
+    grid-row: 1 / 115;
+
+}
+#col7-8-row6-end {
+    background-color: rgb(212, 129, 220);
+
+    grid-column: col7 / col8;
+    grid-row: 1 / 115;
+
+} */
+
