@@ -170,12 +170,6 @@ body {
     display: flex;
 
 }
-#col2-4-row48-53 {
-    background-color: rgb(190, 77, 255);
-
-    grid-column: col2 / col4;
-    grid-row: 48 / 53;
-}
 #quote-8 {
     /* background-color: rgb(194, 130, 144); */
 
@@ -386,6 +380,72 @@ body {
     border-width:  2px 0px 0px 0px;
 
     display: flex;
+}
+
+
+
+
+/* --- PHOTOS --- */
+/* https://www.w3schools.com/cssref/pr_background-image.asp */
+#photo-adams {
+    /* background-color: rgb(190, 77, 255); */
+    background-image: url("https://i0.wp.com/www.anseladams.com/wp-content/uploads/2019/04/ansel-adams-younger-1.jpg?fit=237%2C300&ssl=1");
+    background-position: center;
+    background-size: cover;
+
+    border: #3B4C50 solid;
+    border-width:  0px 2px 0px 2px;
+
+    grid-column: col2 / col4;
+    grid-row: 48 / 53;
+}
+#photo-passport {
+    /* background-color: rgb(190, 77, 255); */
+    background-image: url("https://media.cntraveler.com/photos/5717f9d680cf3e034f9741a7/16:9/w_1280,c_limit/passport-card-sample.jpg");
+    background-position: left;
+    background-size: cover;
+
+    border: #3B4C50 solid;
+    border-width:  2px 0px 2px 0px;
+
+    grid-column: col3 / col5;
+    grid-row: 64 / 68;
+}
+#photo-weather {
+
+    background-image: url("https://ane4bf-datap1.s3-eu-west-1.amazonaws.com/wmocms/s3fs-public/styles/featured_media_detail/public/23613146140_6edfea579f_k.jpg?m0oNCnmjJAswk0CJrWZ.iW.ge6XbrfR1&itok=YBQjaq77");
+    background-position: center;
+    background-size: cover;
+
+    border: #3B4C50 solid;
+    border-width:  2px 0px 2px 0px;
+
+    grid-column: col5 / col8;
+    grid-row: 67 / 72;
+}
+#photo-xray {
+
+    background-image: url("https://www.imaginghealthcare.com/wp-content/uploads/2020/06/x-ray.jpg");
+    background-position: center;
+    background-size: cover;
+
+    border: #3B4C50 solid;
+    border-width:  2px 0px 2px 0px;
+
+    grid-column: col4 / col5;
+    grid-row: 75 / 80;
+}
+#photo-atget {
+
+    background-image: url("https://static01.nyt.com/images/2020/05/28/world/paris-atget-photos-fader1/paris-atget-photos-fader1-superJumbo.jpg");
+    background-position: center;
+    background-size: cover;
+
+    border: #3B4C50 solid;
+    border-width:  2px 0px 0px 0px;
+
+    grid-column: col5 / col8;
+    grid-row: 83 / 87;
 }
 
 
