@@ -5,53 +5,133 @@ body {
     grid-template-rows: repeat(114, 5rem);
 }
 #title {
-    background-color: aqua;
+    /* background-color: aqua; */
 
     grid-column: col3 / col8;
     grid-row: 1 / 5;
+
+    padding-left: 2rem;
+    font-size: 5rem;
+    display: flex;
+
+    border: #3B4C50 solid;
+    border-width:  0px 2px 5px 0px;
+
 }
 #names {
-    background-color: rgb(187, 130, 240);
+    /* background-color: rgb(187, 130, 240); */
 
     grid-column: col3 / col8;
     grid-row: 5 / 6;
+
+    padding-left: 2rem;
+    display: flex;
+
+    border: #3B4C50 solid;
+    border-width:  0px 2px 2px 0px;
+
 }
 
 
 
 /* --- QUOTES --- */
 #quote-1 {
-    background-color: rgb(168, 109, 109);
+    /* background-color: rgb(168, 109, 109); */
 
     grid-column: col5 / col7;
     grid-row: 6 / 9;
+
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 1.5rem;
+    display: flex;
+
+    border: #3B4C50 solid;
+    border-width:  0px 2px 2px 0px;
 }
 #quote-2 {
-    background-color: rgb(109, 163, 168);
+    /* background-color: rgb(109, 163, 168); */
 
     grid-column: col3 / col6;
     grid-row: 11 / 16;
+    
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    border: #3B4C50 solid;
+    border-width:  2px 2px 2px 2px;
+
+    display:flex;
+    flex: row;
+    justify-content:space-between;
+    align-items:space-between;
 
 }
+#quote-2-appear {
+    grid-column: col3 / col6;
+    grid-row: 11 / 16;
+
+    text-align:right;
+
+}
+#quote-2-appear:hover span{
+    display:none;
+    
+}
+#quote-2-appear:hover::before {
+    text-align:right;
+    font-family: 'Merriweather', serif;
+    content:" a heroic effort of attention, an ascetic discipline, a mystic receptivity to the world which requires that the photographer pass through a cloud of unknowing"
+}
 #quote-3 {
-    background-color: rgb(190, 72, 184);
+    /* background-color: rgb(190, 72, 184); */
 
     grid-column: col4 / col9;
     grid-row: 20 / 23;
 
+    padding: 2rem;
+    font-size:1.2rem;
+
+
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+
+    border: #3B4C50 solid;
+    border-width:  2px 0px 2px 2px;
+}
+.quote-3-rows {
+    flex-direction:row;
+    
 }
 #quote-4 {
-    background-color: rgb(234, 147, 229);
+    /* background-color: rgb(234, 147, 229); */
 
     grid-column: col6 / col9;
     grid-row: 23 / 25;
 
+    padding: 2rem;
+    font-size:1.2rem;
+
+    border: #3B4C50 solid;
+    border-width:  0px 0px 2px 0px;
+
+    display: flex;
 }
 #quote-5 {
-    background-color: rgb(166, 234, 147);
+    /* background-color: rgb(166, 234, 147); */
 
     grid-column: col1 / col4;
     grid-row: 28 / 31;
+
+    padding: 2rem;
+    text-align:right;
+    font-size: 1.5rem;
+    line-height:2.5rem;
+
+    border: #3B4C50 solid;
+    border-width:  2px 2px 2px 0px;
+
+    display: flex;
 
 }
 #quote-6 {
@@ -60,6 +140,9 @@ body {
     grid-column: col4 / col6;
     grid-row: 31 / 39;
 
+    padding: 2rem;
+
+    display: flex;
 }
 #quote-7 {
     background-color: rgb(77, 252, 255);
@@ -289,6 +372,34 @@ body {
     grid-row: 100 / 113;
 }
 
+
+
+/* --- GENERAL --- */
+.center-vertical {
+    display: flex;
+    flex: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+.font-merriweather {
+    font-family: 'Merriweather', serif;
+}
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+.text-right {
+    text-align: right;
+}
+.spacing-evenly {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:space-between;
+}
 
 
 
