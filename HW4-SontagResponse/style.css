@@ -60,28 +60,29 @@ body {
     font-size: 1.5rem;
     line-height: 2.5rem;
     border: #3B4C50 solid;
-    border-width:  2px 2px 2px 2px;
+    border-width:  2px 0px 0px 2px;
 
     display:flex;
     flex: row;
     justify-content:space-between;
     align-items:space-between;
 
-}
-#quote-2-appear {
-    grid-column: col3 / col6;
-    grid-row: 11 / 16;
-
-    text-align:right;
+    position:relative;
 
 }
-#quote-2-appear:hover span{
-    display:none;
+
+#quote-2:hover #quote-2-appear {
+    display: block;
+}
+#quote-2:hover::before {
     
-}
-#quote-2-appear:hover::before {
     text-align:right;
     font-family: 'Merriweather', serif;
+    bottom:0;
+    right: 0;
+    position:absolute;
+    padding:2rem;
+
     content:" a heroic effort of attention, an ascetic discipline, a mystic receptivity to the world which requires that the photographer pass through a cloud of unknowing"
 }
 #quote-3 {
@@ -138,8 +139,35 @@ body {
     border-width:  2px 0px 2px 0px;
 
     display: flex;
+    position:relative;
+}
+#hidden {
+    padding: 0.5rem;
+    display: inline;
+    background-color: #3B4C50;
+    color:white;
+}
+#container-u {
+    position:relative;
+    display:inline;
+}
+#unveiled {
+    padding: 2rem;
+    display: inline;
+    background-color: #3B4C50;
+    letter-spacing: 0.5rem;
+    color:#3B4C50;
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+#unveiled:hover {
+    color:white;
 
 }
+/* #unveiled:hover::before {
+    color: white;
+} */
 #quote-6 {
     /* background-color: rgb(218, 213, 126); */
 
@@ -199,6 +227,7 @@ body {
 
     display: flex;
 }
+
 #quote-10 {
     /* background-color: rgb(193, 234, 255); */
 
@@ -220,7 +249,7 @@ body {
     grid-column: col2 / col5;
     grid-row: 60 / 62;
 
-    /* padding: 2rem; */
+    padding-right: 2rem;
     text-align:right;
     font-size: 1.2rem;
     line-height:2.3rem;
@@ -230,6 +259,7 @@ body {
 
      
     display: flex;
+    justify-content:flex-end;
 }
 #quote-12 {
     /* background-color: rgb(73, 172, 121); */
@@ -260,6 +290,8 @@ body {
     border-width:  2px 0px 2px 0px;
 
     display: flex;
+    justify-content:flex-end;
+
 }
 #quote-14 {
     /* background-color: rgb(129, 194, 133); */
@@ -305,6 +337,8 @@ body {
     border-width:  2px 0px 2px 0px;
 
     display: flex;
+    justify-content:flex-end;
+
 }
 #quote-17 {
     /* background-color: rgb(194, 177, 129); */
@@ -335,6 +369,8 @@ body {
     border-width:  2px 0px 2px 0px;
 
     display: flex;
+    justify-content:flex-end;
+
 }
 #quote-19 {
     /* background-color: rgb(87, 20, 93); */
@@ -365,6 +401,8 @@ body {
     border-width:  2px 0px 2px 0px;
 
     display: flex;
+    justify-content:flex-end;
+    text-align:right;
 }
 #quote-21 {
     /* background-color: rgb(10, 178, 239); */
@@ -376,10 +414,12 @@ body {
     line-height:2.3rem;
     font-size: 1.5rem;
 
-    border: #3B4C50 solid;
+    border: rgb(59, 76, 80) solid;
     border-width:  2px 0px 0px 0px;
 
     display: flex;
+    justify-content:flex-end;
+
 }
 
 
@@ -389,7 +429,7 @@ body {
 /* https://www.w3schools.com/cssref/pr_background-image.asp */
 #photo-adams {
     /* background-color: rgb(190, 77, 255); */
-    background-image: url("https://i0.wp.com/www.anseladams.com/wp-content/uploads/2019/04/ansel-adams-younger-1.jpg?fit=237%2C300&ssl=1");
+    background-image: linear-gradient(rgba(59, 76, 80, 0.75), rgba(59, 76, 80, 0.75)), url("https://i0.wp.com/www.anseladams.com/wp-content/uploads/2019/04/ansel-adams-younger-1.jpg?fit=237%2C300&ssl=1");
     background-position: center;
     background-size: cover;
 
@@ -399,9 +439,13 @@ body {
     grid-column: col2 / col4;
     grid-row: 48 / 53;
 }
+#photo-adams:hover {
+    background-image:url("https://i0.wp.com/www.anseladams.com/wp-content/uploads/2019/04/ansel-adams-younger-1.jpg?fit=237%2C300&ssl=1");
+
+}
 #photo-passport {
     /* background-color: rgb(190, 77, 255); */
-    background-image: url("https://media.cntraveler.com/photos/5717f9d680cf3e034f9741a7/16:9/w_1280,c_limit/passport-card-sample.jpg");
+    background-image: linear-gradient(rgba(59, 76, 80, 0.75), rgba(59, 76, 80, 0.75)), url("https://media.cntraveler.com/photos/5717f9d680cf3e034f9741a7/16:9/w_1280,c_limit/passport-card-sample.jpg");
     background-position: left;
     background-size: cover;
 
@@ -411,9 +455,12 @@ body {
     grid-column: col3 / col5;
     grid-row: 64 / 68;
 }
+#photo-passport:hover {
+    background-image: url("https://media.cntraveler.com/photos/5717f9d680cf3e034f9741a7/16:9/w_1280,c_limit/passport-card-sample.jpg");
+}
 #photo-weather {
 
-    background-image: url("https://ane4bf-datap1.s3-eu-west-1.amazonaws.com/wmocms/s3fs-public/styles/featured_media_detail/public/23613146140_6edfea579f_k.jpg?m0oNCnmjJAswk0CJrWZ.iW.ge6XbrfR1&itok=YBQjaq77");
+    background-image: linear-gradient(rgba(59, 76, 80, 0.75), rgba(59, 76, 80, 0.75)), url("https://ane4bf-datap1.s3-eu-west-1.amazonaws.com/wmocms/s3fs-public/styles/featured_media_detail/public/23613146140_6edfea579f_k.jpg?m0oNCnmjJAswk0CJrWZ.iW.ge6XbrfR1&itok=YBQjaq77");
     background-position: center;
     background-size: cover;
 
@@ -423,9 +470,12 @@ body {
     grid-column: col5 / col8;
     grid-row: 67 / 72;
 }
+#photo-weather:hover {
+    background-image: url("https://ane4bf-datap1.s3-eu-west-1.amazonaws.com/wmocms/s3fs-public/styles/featured_media_detail/public/23613146140_6edfea579f_k.jpg?m0oNCnmjJAswk0CJrWZ.iW.ge6XbrfR1&itok=YBQjaq77");
+}
 #photo-xray {
 
-    background-image: url("https://www.imaginghealthcare.com/wp-content/uploads/2020/06/x-ray.jpg");
+    background-image: linear-gradient(rgba(59, 76, 80, 0.75), rgba(59, 76, 80, 0.75)), url("https://www.imaginghealthcare.com/wp-content/uploads/2020/06/x-ray.jpg");
     background-position: center;
     background-size: cover;
 
@@ -435,9 +485,12 @@ body {
     grid-column: col4 / col5;
     grid-row: 75 / 80;
 }
+#photo-xray:hover {
+    background-image: url("https://www.imaginghealthcare.com/wp-content/uploads/2020/06/x-ray.jpg");
+}
 #photo-atget {
 
-    background-image: url("https://static01.nyt.com/images/2020/05/28/world/paris-atget-photos-fader1/paris-atget-photos-fader1-superJumbo.jpg");
+    background-image: linear-gradient(rgba(59, 76, 80, 0.75), rgba(59, 76, 80, 0.75)), url("https://static01.nyt.com/images/2020/05/28/world/paris-atget-photos-fader1/paris-atget-photos-fader1-superJumbo.jpg");
     background-position: center;
     background-size: cover;
 
@@ -446,6 +499,9 @@ body {
 
     grid-column: col5 / col8;
     grid-row: 83 / 87;
+}
+#photo-atget:hover {
+    background-image: url("https://static01.nyt.com/images/2020/05/28/world/paris-atget-photos-fader1/paris-atget-photos-fader1-superJumbo.jpg");
 }
 
 
@@ -542,6 +598,11 @@ body {
 
     grid-column: col5 / col6;
     grid-row: 51 / 52;
+}
+#quote-9:hover + #outline-13 {
+    border: solid #B90809 ;
+    border-width: 0px 0px 0px 0px;
+
 }
 #outline-14 {
     border: solid #B90809;
