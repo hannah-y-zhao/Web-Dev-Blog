@@ -1,0 +1,60 @@
+body{
+    margin:0;
+}
+.row {
+    /* background-color: aqua; */
+
+    margin: 10% 20% 10% 20%;
+
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height:20rem
+}
+.mouse {
+    font-size:120%;
+    /* background-color: aqua; */
+}
+.mouse:hover {
+    animation: shock 250ms infinite ease-in;
+    cursor:pointer;
+}
+.cat-text{
+    /* background-color: bisque; */
+    text-align:center;
+    font-size:350%;
+
+}
+.cat-text .hunt {
+    display:none;
+}
+.mouse:hover + #cat .cat-text .hunt{
+    /* background-color: aquamarine; */
+    display:inline;
+}
+.mouse:hover + #cat .cat-text .awake{ 
+    display:none;
+}
+.cat-text .asleep{
+    display:none;
+}
+.cat-text:hover .awake{
+    display:none;
+}
+.cat-text:hover .asleep{
+    display:inline;
+}
+.cat-text:hover{
+
+    animation: rollover 2s ease-in-out forwards;
+    animation-delay: 500ms
+}
+@keyframes rollover{
+    0% {transform: rotate(0);}
+    100%{transform: rotate(0.5turn);}
+}
+@keyframes shock {
+    0%{transform:scale(100%,100%); padding-bottom:0}
+    100%{transform:scale(150%,150%);padding-bottom:1rem}
+}

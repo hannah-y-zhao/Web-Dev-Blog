@@ -42,7 +42,7 @@ body {
 .subheadings{
     letter-spacing: 5px;
     font-size: 150%;
-    background-color:#78949f;
+    background-color:#408686;
     color: #adc3cc;
     font-family:monospace;
     text-align: center;
@@ -58,7 +58,7 @@ body {
     
 }
 .assignments{
-    background-color: #78949f;
+    background-color: #408686;
     padding-top:7%;
     padding-left: 10%;
     padding-right: 10%;
@@ -70,5 +70,9 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-content: space-between;
 
+}
+.post{
+    margin: 1rem;
 }
