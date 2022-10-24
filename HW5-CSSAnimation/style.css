@@ -7,7 +7,7 @@ body{
     margin: 10% 20% 10% 20%;
 
     display:flex;
-    flex-flow: row nowrap;
+    flex-flow: row-reverse nowrap;
     justify-content: space-between;
     align-items: center;
     height:20rem
@@ -16,9 +16,16 @@ body{
     font-size:120%;
     /* background-color: aqua; */
 }
+#fish-txt {
+    font-size: 140%
+}
 .mouse:hover {
     animation: shock 250ms infinite ease-in;
     cursor:pointer;
+}
+.fish:hover {
+    animation: shock 200ms ease-in 250ms, swim 2s 250ms ease-in forwards;
+
 }
 .cat-text{
     /* background-color: bisque; */
@@ -29,11 +36,11 @@ body{
 .cat-text .hunt {
     display:none;
 }
-.mouse:hover + #cat .cat-text .hunt{
+.mouse:hover ~ #cat .cat-text .hunt{
     /* background-color: aquamarine; */
     display:inline;
 }
-.mouse:hover + #cat .cat-text .awake{ 
+.mouse:hover ~ #cat .cat-text .awake{ 
     display:none;
 }
 .cat-text .asleep{
@@ -57,4 +64,8 @@ body{
 @keyframes shock {
     0%{transform:scale(100%,100%); padding-bottom:0}
     100%{transform:scale(150%,150%);padding-bottom:1rem}
+}
+@keyframes swim {
+    0%{transform:scale(100%,100%); padding-right:0}
+    100%{transform:scale(10%,10%);padding-right:5rem}
 }
