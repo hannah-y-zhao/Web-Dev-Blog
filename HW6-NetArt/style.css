@@ -44,13 +44,13 @@ a:hover{
 
 /* SECTION HEADER SECTION */
 .section-nav{
-    padding: 2rem 5rem 2rem 5rem;
+    padding: 2rem 5rem 0rem 5rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 .main-content{
-    margin: 2rem 6rem 5rem 6rem;
+    margin: 0rem 6rem 5rem 6rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content:space-evenly;
@@ -104,7 +104,6 @@ a:hover{
 
 
 
-
 /* SECTION DESC SECTION */
 .section-desc{
     text-align:left;
@@ -125,3 +124,28 @@ a:hover{
     flex-direction: row;
     justify-content: space-around;
 }
+
+
+
+/* MEDIA QUERY SECTION */
+@media screen and (max-width: 600px) {
+    .home-main{
+        flex-flow: row wrap;
+    }
+    .button-left {
+      order:1
+    }
+    .button-right {
+        order:2
+    }
+    .image-left-button {
+        order:1;
+        top:80%;
+        left:25%
+    }
+    .image-right-button {
+        order:1;
+        top:80%;
+        right:25%
+    }
+  }
