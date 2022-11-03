@@ -1,18 +1,20 @@
 body{
     margin:0;
     background-color: #919191;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 /* HOME/MAIN SECTION */
 .home-main{
-    margin: 5%;
+    margin: 7% 0 0 0;
     display:flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
 }
 .nine-eyes{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display:block;
     align-items:center;
     justify-content: center;
@@ -20,6 +22,24 @@ body{
 }
 img{
     align-self:center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color:#661B1C
+}
+.button-left{
+    color:white;
+    font-size:5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.button-right{
+    color: white;
+    font-size:5rem;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 /* SECTION HEADER SECTION */
@@ -30,7 +50,7 @@ img{
     justify-content: space-between;
 }
 .main-content{
-    margin: 2rem 6rem 2rem 6rem;
+    margin: 2rem 6rem 5rem 6rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content:space-evenly;
@@ -47,7 +67,7 @@ img{
     flex-flow:row nowrap;
     justify-content:space-between;
     position:absolute;
-    top:50%;
+    top:40%;
     left:0;
     width:inherit;
 }
@@ -56,20 +76,40 @@ img{
     flex-flow:row nowrap;
     justify-content:space-between;
     position:absolute;
-    top:50%;
+    top:40%;
     right:0;
     width:inherit;
 }
 .section-title{
+    margin-top:1rem;
     text-align: center;
+    font-size: 3rem;
 }
+.section-left-button{
+    color:white;
+    font-size:3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.section-right-button{
+    color:white;
+    font-size:3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.image-left-button{
+    font-size:5rem;
+}
+.image-right-button{
+    font-size:5rem;
+}
+
+
 
 
 /* SECTION DESC SECTION */
 .section-desc{
     text-align:left;
     margin: 2% 20% 10% 20%;
-
+    font-size:1.2rem;
 }
 .row-center{
     margin: 2% 20% 10% 20%;
